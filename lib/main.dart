@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:foodie_ferry/view/splash_screen.dart';
+import 'package:foodie_ferry/view/auth/customer_auth/tab_bar_view.dart';
 import 'package:get/get.dart';
 
 void main() {
@@ -16,15 +16,15 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.red,
         inputDecorationTheme: const InputDecorationTheme(
           enabledBorder: OutlineInputBorder(
-            borderSide: BorderSide(width: 2, color: Colors.grey),
+            borderSide: BorderSide(width: 1, color: Color(0xFFF6F6F6)),
           ),
           focusedBorder: OutlineInputBorder(
-            borderSide: BorderSide(width: 2, color: Colors.green),
+            borderSide: BorderSide(width: 2, color: Color(0xFFF6F6F6)),
           ),
         ),
       ),
       debugShowCheckedModeBanner: false,
-      home: const SplashScreen(),
+      home: const TabBarViewScreen(),
     );
   }
 }

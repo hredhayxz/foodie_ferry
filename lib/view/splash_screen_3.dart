@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:foodie_ferry/view/utils/image_urls.dart';
 
+import '../widget/custom_button.dart';
+
 class SplashScreenThree extends StatefulWidget {
   const SplashScreenThree({super.key});
 
@@ -30,23 +32,10 @@ class _SplashScreenThreeState extends State<SplashScreenThree> {
                   color: Color(0xFF3B3B3B),
                 ),),
                 const SizedBox(height: 42,),
-                Container(
-                  height: 55,
-                  width: 157,
-                  decoration: BoxDecoration(
-                      color: const Color(0xFFFF0000),
-                      borderRadius: BorderRadius.circular(8)
-                  ),
-                  child: ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                          backgroundColor: const Color(0xFFFF0000)
-                      ),
-                      onPressed: (){}, child: const Text(
-                    "Next",style: TextStyle(color:Colors.white),
-                  )),
-                )
+                 CustomButton(width: 157,text: "Next",onTab: (){},)
               ],
             ))
     );
   }
 }
+
