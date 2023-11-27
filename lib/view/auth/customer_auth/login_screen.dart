@@ -67,6 +67,12 @@ class _CustomerLoginScreenState extends State<CustomerLoginScreen> {
                     hintText: "Enter your password",
                   ),
                 ),
+                const Padding(
+                  padding: EdgeInsets.only(left: 243),
+                  child: Text("Forget Password?",style: TextStyle(
+                      color: Colors.red,fontSize: 12,fontWeight: FontWeight.w500),
+                  ),
+                ),
                 const SizedBox(height: 36,),
                 Center(child: CustomButton(onTab: (){
                   if(_formKey.currentState!.validate()){
